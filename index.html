@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sitio oficial del taller Piensa como científico de datos: objetivos, sesiones y materiales." />
+  <meta name="theme-color" content="#07151a" />
+  <title>Piensa como científico de datos</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <header class="site-header" id="inicio">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 28 28" role="img"><path d="M5 19.5 10.5 14l4 4L23 8.5"/><circle cx="5" cy="19.5" r="2"/><circle cx="10.5" cy="14" r="2"/><circle cx="14.5" cy="18" r="2"/><circle cx="23" cy="8.5" r="2"/></svg>
+        </span>
+        <span>
+          <strong>Piensa como científico de datos</strong>
+          <small>IA · patrones · decisiones inteligentes</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <a href="#objetivos">Objetivos</a>
+        <a href="#sesiones">Sesiones</a>
+        <a href="#materiales">Material</a>
+      </nav>
+
+      <a class="nav-cta" href="#sesiones">Ver ruta del taller</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-pad">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="pulse-dot"></span> Taller de Ciencia de Datos e IA</div>
+          <h1>Aprender a mirar el mundo <span>con datos.</span></h1>
+          <p class="hero-lead">Un taller para estudiantes de enseñanza media que transforma preguntas cotidianas en evidencia, patrones y mejores decisiones.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#sesiones">Explorar sesiones</a>
+            <a class="btn btn-secondary" href="materials/programa/programa-taller-piensa-como-cientifico-de-datos.docx" download>Descargar programa</a>
+          </div>
+
+          <div class="hero-meta" aria-label="Datos del taller">
+            <div><strong>6</strong><span>sesiones</span></div>
+            <div><strong>3°–4°</strong><span>medio</span></div>
+            <div><strong>Power BI + IA</strong><span>enfoque aplicado</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-1" aria-label="Visualización conceptual del ciclo del dato">
+          <div class="signal-card">
+            <div class="signal-top">
+              <span>DATA SIGNAL</span>
+              <span class="live">LIVE</span>
+            </div>
+            <div class="mini-chart" aria-hidden="true">
+              <span style="height:38%"></span>
+              <span style="height:54%"></span>
+              <span style="height:44%"></span>
+              <span style="height:72%"></span>
+              <span style="height:61%"></span>
+              <span style="height:88%"></span>
+              <span style="height:76%"></span>
+              <span style="height:94%"></span>
+            </div>
+            <div class="signal-labels"><span>Pregunta</span><span>Patrón</span><span>Decisión</span></div>
+          </div>
+
+          <div class="floating-chip chip-one">01 · Preguntar</div>
+          <div class="floating-chip chip-two">02 · Explorar</div>
+          <div class="floating-chip chip-three">03 · Decidir</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad section-muted" id="objetivos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow">OBJETIVOS</div>
+          <h2>Más que usar herramientas: <span>aprender a pensar.</span></h2>
+          <p>El foco del taller es desarrollar una primera aproximación al pensamiento de la ciencia de datos, conectando información, patrones e inteligencia artificial con problemas reales.</p>
+        </div>
+
+        <div class="objective-layout">
+          <article class="objective-main reveal">
+            <div class="objective-number">01</div>
+            <div>
+              <span class="kicker">Objetivo general</span>
+              <h3>Tomar decisiones inteligentes a partir de información y evidencia.</h3>
+              <p>Comprender cómo los datos, los patrones y la inteligencia artificial pueden utilizarse para analizar situaciones reales, formular mejores preguntas y fundamentar conclusiones.</p>
+            </div>
+          </article>
+
+          <div class="objective-grid" id="objectiveGrid" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad" id="sesiones">
+      <div class="container">
+        <div class="section-heading split-heading reveal">
+          <div>
+            <div class="eyebrow">ROADMAP DEL TALLER</div>
+            <h2>Seis sesiones. <span>Una forma nueva de mirar los datos.</span></h2>
+          </div>
+          <div class="progress-panel" aria-label="Progreso del taller">
+            <div class="progress-top"><span>Progreso</span><strong id="progressLabel">0 / 6</strong></div>
+            <div class="progress-track"><span id="progressBar"></span></div>
+          </div>
+        </div>
+
+        <div class="session-list" id="sessionList" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section-pad section-muted" id="materiales">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow">BIBLIOTECA DEL TALLER</div>
+          <h2>Todo el material, <span>ordenado por sesión.</span></h2>
+          <p>Presentaciones, guías y ejercicios quedan disponibles desde un único lugar. A medida que avance el taller, esta biblioteca puede crecer sin rediseñar la página.</p>
+        </div>
+
+        <div class="material-toolbar reveal">
+          <div>
+            <span class="toolbar-label">Material publicado</span>
+            <strong id="materialCount">0 archivos</strong>
+          </div>
+          <div class="filter-pills" role="group" aria-label="Filtrar material">
+            <button class="filter-pill active" data-filter="all" type="button">Todo</button>
+            <button class="filter-pill" data-filter="PPTX" type="button">Presentaciones</button>
+            <button class="filter-pill" data-filter="DOCX" type="button">Guías y ejercicios</button>
+          </div>
+        </div>
+
+        <div class="materials-grid" id="materialsGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="cta-section section-pad">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div>
+            <div class="eyebrow">APRENDER HACIENDO</div>
+            <h2>De una pregunta simple a una decisión con evidencia.</h2>
+            <p>Ese es el hilo conductor del taller: preguntar, reunir datos, buscar patrones, interpretar y decidir.</p>
+          </div>
+          <a class="btn btn-primary" href="#inicio">Volver arriba</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <strong>Piensa como científico de datos</strong>
+        <p>IA, patrones y decisiones inteligentes.</p>
+      </div>
+      <div class="footer-note">Sitio académico · material de apoyo del taller</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
