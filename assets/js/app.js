@@ -7,6 +7,14 @@ const materialCount = document.querySelector("#materialCount"); // Guarda el tex
 const progressBar = document.querySelector("#progressBar"); // Guarda la barra visual que representa el progreso del taller.
 const progressLabel = document.querySelector("#progressLabel"); // Guarda el contador de sesiones realizadas sobre el total.
 
+function linkAttributes(item) {
+  return item.action === "download" ? "download" : ""; // Decide si el navegador debe descargar el archivo o abrirlo como contenido web.
+}
+
+function actionLabel(item) {
+  return item.action === "download" ? "Descargar ↓" : "Ver online →"; // Muestra una acción clara según el tipo de material publicado.
+}
+
 function renderObjectives() {
   objectiveGrid.innerHTML = content.objectives.map((objective, index) => `
     <article class="objective-card reveal">
@@ -20,7 +28,7 @@ function renderObjectives() {
 function renderSessions() {
   sessionList.innerHTML = content.sessions.map((session) => {
     const links = session.materials.length
-      ? session.materials.map((item) => `<a class="mini-link" href="${item.path}" download>${item.label} ↓</a>`).join("")
+      ? session.materials.map((item) => `<a class="mini-link" href="${item.path}" ${linkAttributes(item)}>${item.label}${item.action === "download" ? " ↓" : " →"}</a>`).join("")
       : `<span class="no-material">Material disponible próximamente</span>`;
 
     return `
@@ -63,7 +71,7 @@ function renderMaterials(filter = "all") {
       <p>${item.description}</p>
       <div class="material-meta">
         <span>${item.session}</span>
-        <a class="download-link" href="${item.path}" download>Descargar ↓</a>
+        <a class="download-link" href="${item.path}" ${linkAttributes(item)}>${actionLabel(item)}</a>
       </div>
     </article>
   `).join("");
