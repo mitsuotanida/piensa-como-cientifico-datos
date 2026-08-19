@@ -30,7 +30,16 @@ window.COURSE_CONTENT = {
         { label: "Ejercicio carta Gantt", path: "materials/sesion-02/ejercicio-carta-gantt-sharepoint-power-bi.docx", action: "download" } // Descarga el ejercicio original de SharePoint y Power BI realizado en la sesión 2.
       ]
     }, // Define la segunda sesión e incorpora el ejercicio de Gantt que ya fue realizado.
-    { number: 3, title: "Cómo la IA aprende de los datos", description: "Qué significa que un sistema aprenda, ejemplos de recomendación, clasificación y predicción, además de sesgos y uso responsable.", status: "next", statusLabel: "Próximamente", materials: [] }, // Define la tercera sesión, todavía sin material publicado.
+    {
+      number: 3,
+      title: "Ingeniería de prompts para crear un MVP real",
+      description: "Cómo pasar de un prompt suelto a una instrucción de producto: contexto, datos, tarea, criterios, riesgos, iteración y validación de un MVP con IA.",
+      status: "done",
+      statusLabel: "Realizada",
+      materials: [
+        { label: "Ver módulo 3", path: "materials/sesion-03/modulo-3-ingenieria-de-prompts.html", action: "view" } // Abre la versión web del módulo 3 con los contenidos y actividades de ingeniería de prompts.
+      ]
+    }, // Marca la tercera sesión como realizada y publica su material en el roadmap.
     { number: 4, title: "Visualizar para entender", description: "Tablas, frecuencias, porcentajes y gráficos simples para descubrir hallazgos y evitar errores frecuentes de interpretación.", status: "next", statusLabel: "Próximamente", materials: [] }, // Define la cuarta sesión y su foco en visualización de datos.
     { number: 5, title: "Laboratorio de ideas y análisis", description: "Trabajo grupal sobre un desafío cercano: hábitos digitales, música, deporte, redes sociales, consumo o formas de estudio.", status: "next", statusLabel: "Próximamente", materials: [] }, // Define la quinta sesión como espacio de análisis aplicado en equipo.
     { number: 6, title: "Presentamos como científicos de datos", description: "Comunicación de hallazgos, retroalimentación, cierre del taller y proyección de la ciencia de datos y la IA hacia estudios y mundo profesional.", status: "next", statusLabel: "Próximamente", materials: [] } // Define la sexta y última sesión como instancia de presentación y cierre.
@@ -60,6 +69,14 @@ window.COURSE_CONTENT = {
       path: "materials/sesion-02/ejercicio-carta-gantt-sharepoint-power-bi.docx",
       action: "download"
     }, // Registra el ejercicio original de carta Gantt realizado durante la sesión 2.
+    {
+      title: "Módulo 3 · Ingeniería de prompts",
+      description: "Ingeniería de prompts aplicada a la creación de un MVP real: anatomía del prompt, ejemplos, iteración, evaluación, guardrails y pitch final.",
+      type: "PPTX",
+      session: "Sesión 3",
+      path: "materials/sesion-03/modulo-3-ingenieria-de-prompts.html",
+      action: "view"
+    }, // Publica el módulo 3 en la biblioteca y lo mantiene dentro del filtro de presentaciones.
     {
       title: "Programa del taller",
       description: "Descripción, objetivos, ruta de seis sesiones, metodología y requerimientos del taller.",
